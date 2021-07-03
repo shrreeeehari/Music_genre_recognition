@@ -7,10 +7,16 @@ The dataset can be downloaded from http://marsyas.info/downloads/datasets.html
 
 <h3>SEQUENCE OF EXECUTION</h3>
 <h4>FEATURE EXTRACTION</h4>
-This is achieved using the Fast Fourier Transform algorithm of scipy. Running <code>fft_extraction.py</code> generates the feature set for all wav audio files and stores them as numpy files in ./extracted_fft
+This is achieved using the Fast Fourier Transform algorithm of scipy. Run <code>fft_extraction.py</code> to generate the feature set for all wav audio files and store them as numpy files in ./extracted_fft
 
 <h4>TRAINING MODEL</h4>
-<code>logreg.py extracted_fft</code> splits set into train and test subsets, applies Logistic Regression to train model, calculate prediction accuracy, save the model and the confusion matrix.
+Run <code>logreg.py extracted_fft</code> to split set into train and test subsets, apply Logistic Regression to train model, calculate prediction accuracy, save the model and the confusion matrix.
+<br>
+<br>
+<img src="images/logreg.png" height="300">
 
 <h4>PREDICTING GENRE</h4>
-<code>test.py ./</code> uses the saved model to predict the genre of the new input audio file.
+Run <code>test.py ./</code> to load the saved model to predict the genre of the new input audio file.
+<br>
+<br>
+<img src="images/prediction.png" height="275">
