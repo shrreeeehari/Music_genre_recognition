@@ -1,0 +1,1 @@
+This dir folders should contain the audio files from the GTZAN dataset.
