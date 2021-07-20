@@ -10,7 +10,7 @@ The dataset can be downloaded from http://marsyas.info/downloads/datasets.html
 This is achieved using the Fast Fourier Transform algorithm of scipy. Run <code>fft_extraction.py</code> to generate the feature set for all wav audio files and store them as numpy files in ./extracted_fft
 
 <h4>TRAINING MODEL</h4>
-Run <code>logreg.py extracted_fft</code> to split set into train and test subsets, apply Logistic Regression to train model, calculate prediction accuracy, save the model as <code>model.pkl</code>  and the confusion matrix.
+Run <code>logreg.py extracted_fft</code> to split set into train and test subsets, apply Logistic Regression to train model, calculate prediction accuracy, save the model as <code>model.pkl</code>  and the confusion matrix as confusion_matrix_fft.png.
 <br>
 <br>
 <img src="images/logreg.png" height="300">
